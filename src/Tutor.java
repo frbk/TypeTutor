@@ -6,6 +6,7 @@ import org.eclipse.swt.widgets.Text;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Group;
 import org.eclipse.swt.widgets.Composite;
+import org.eclipse.wb.swt.SWTResourceManager;
 
 
 public class Tutor {
@@ -50,15 +51,17 @@ public class Tutor {
 		shlTypingTutor.setText("Typing Tutor");
 		
 		Label lable1 = new Label(shlTypingTutor, SWT.NONE);
+		lable1.setFont(SWTResourceManager.getFont("Ubuntu", 10, SWT.NORMAL));
 		lable1.setText("Type some text using your keyboard. The keys you press will be highlighted and the text will be displayed.");
 		lable1.setBounds(10, 10, 698, 17);
 		
 		Label label2 = new Label(shlTypingTutor, SWT.NONE);
+		label2.setFont(SWTResourceManager.getFont("Ubuntu", 10, SWT.NORMAL));
 		label2.setBounds(10, 33, 698, 17);
 		label2.setText("Note: Clickin the buttons with your mouse will not perform any action.");
 		
 		text = new Text(shlTypingTutor, SWT.BORDER | SWT.WRAP);
-		text.setBounds(10, 56, 698, 193);
+		text.setBounds(10, 56, 644, 193);
 		
 		Composite Keyboard = new Composite(shlTypingTutor, SWT.NONE);
 		Keyboard.setBounds(10, 255, 592, 204);
@@ -238,6 +241,54 @@ public class Tutor {
 		Button button_39 = new Button(Keyboard, SWT.NONE);
 		button_39.setText("Enter");
 		button_39.setBounds(497, 76, 84, 39);
+		
+		Button button_40 = new Button(Keyboard, SWT.NONE);
+		button_40.setText("Shift");
+		button_40.setBounds(0, 114, 84, 39);
+		
+		Button button_41 = new Button(Keyboard, SWT.NONE);
+		button_41.setText("^");
+		button_41.setBounds(497, 114, 42, 39);
+		
+		Button button_42 = new Button(Keyboard, SWT.NONE);
+		button_42.setText("Z");
+		button_42.setBounds(81, 114, 42, 39);
+		
+		Button button_43 = new Button(Keyboard, SWT.NONE);
+		button_43.setText("X");
+		button_43.setBounds(121, 114, 42, 39);
+		
+		Button button_44 = new Button(Keyboard, SWT.NONE);
+		button_44.setText("C");
+		button_44.setBounds(161, 114, 42, 39);
+		
+		Button button_45 = new Button(Keyboard, SWT.NONE);
+		button_45.setText("V");
+		button_45.setBounds(201, 114, 42, 39);
+		
+		Button button_46 = new Button(Keyboard, SWT.NONE);
+		button_46.setText("B");
+		button_46.setBounds(241, 114, 42, 39);
+		
+		Button button_47 = new Button(Keyboard, SWT.NONE);
+		button_47.setText("N");
+		button_47.setBounds(281, 114, 42, 39);
+		
+		Button button_48 = new Button(Keyboard, SWT.NONE);
+		button_48.setText("M");
+		button_48.setBounds(321, 114, 42, 39);
+		
+		Button button_49 = new Button(Keyboard, SWT.NONE);
+		button_49.setText(",");
+		button_49.setBounds(361, 114, 42, 39);
+		
+		Button button_50 = new Button(Keyboard, SWT.NONE);
+		button_50.setText(".");
+		button_50.setBounds(401, 114, 42, 39);
+		
+		Button button_51 = new Button(Keyboard, SWT.NONE);
+		button_51.setText("?");
+		button_51.setBounds(441, 114, 42, 39);
 		
 	}
 }
