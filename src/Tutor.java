@@ -290,5 +290,20 @@ public class Tutor {
 		button_51.setText("?");
 		button_51.setBounds(441, 114, 42, 39);
 		
+		Button button_52 = new Button(Keyboard, SWT.NONE);
+		button_52.setText("v");
+		button_52.setBounds(497, 152, 42, 39);
+		
+		Button button_53 = new Button(Keyboard, SWT.NONE);
+		button_53.setText(">");
+		button_53.setBounds(537, 152, 42, 39);
+		
+		Button button_54 = new Button(Keyboard, SWT.NONE);
+		button_54.setText("<");
+		button_54.setBounds(457, 152, 42, 39);
+		
+		Button button_55 = new Button(Keyboard, SWT.NONE);
+		button_55.setBounds(153, 152, 256, 39);
+		
 	}
 }
