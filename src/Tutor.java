@@ -1,3 +1,7 @@
+import java.util.HashMap;
+import java.util.Map;
+
+import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Label;
@@ -7,7 +11,9 @@ import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Group;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.wb.swt.SWTResourceManager;
-
+import org.eclipse.swt.events.KeyAdapter;
+import org.eclipse.swt.events.KeyEvent;
+import org.eclipse.swt.graphics.Color;
 
 public class Tutor {
 
@@ -46,14 +52,15 @@ public class Tutor {
 	 * Create contents of the window.
 	 */
 	protected void createContents() {
+		final Map<Integer, Button> map = new HashMap<>();
 		shlTypingTutor = new Shell();
-		shlTypingTutor.setSize(742, 534);
+		shlTypingTutor.setSize(664, 562);
 		shlTypingTutor.setText("Typing Tutor");
 		
-		Label lable1 = new Label(shlTypingTutor, SWT.NONE);
-		lable1.setFont(SWTResourceManager.getFont("Ubuntu", 10, SWT.NORMAL));
-		lable1.setText("Type some text using your keyboard. The keys you press will be highlighted and the text will be displayed.");
-		lable1.setBounds(10, 10, 698, 17);
+		final Label label1 = new Label(shlTypingTutor, SWT.NONE);
+		label1.setFont(SWTResourceManager.getFont("Ubuntu", 10, SWT.NORMAL));
+		label1.setText("Type some text using your keyboard. The keys you press will be highlighted and the text will be displayed.");
+		label1.setBounds(10, 10, 698, 17);
 		
 		Label label2 = new Label(shlTypingTutor, SWT.NONE);
 		label2.setFont(SWTResourceManager.getFont("Ubuntu", 10, SWT.NORMAL));
@@ -61,6 +68,28 @@ public class Tutor {
 		label2.setText("Note: Clickin the buttons with your mouse will not perform any action.");
 		
 		text = new Text(shlTypingTutor, SWT.BORDER | SWT.WRAP);
+		text.addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyPressed(KeyEvent e) {
+				int keycode;
+				keycode = e.keyCode;
+				Button btn = map.get(keycode);
+				label1.setText("Key pressed "+ keycode);
+				 if (btn != null) {
+		             map.get(keycode).setBackground(new Color(null, 255,255,13));
+		        }
+			}
+			@Override
+			public void keyReleased(KeyEvent e) {
+				int keycode;
+				keycode = e.keyCode;
+				Button btn = map.get(keycode);
+				label1.setText("Key pressed "+ keycode);
+				 if (btn != null) {
+					 map.get(keycode).setBackground(new Color(null,255,255,255));
+		        }
+			}
+		});
 		text.setBounds(10, 56, 644, 193);
 		
 		Composite Keyboard = new Composite(shlTypingTutor, SWT.NONE);
@@ -69,6 +98,7 @@ public class Tutor {
 		Button button = new Button(Keyboard, SWT.NONE);
 		button.setSize(42, 39);
 		button.setText("~");
+		map.put(96, button);
 		
 		Button button_1 = new Button(Keyboard, SWT.NONE);
 		button_1.setLocation(41, 0);
@@ -301,6 +331,7 @@ public class Tutor {
 		Button button_54 = new Button(Keyboard, SWT.NONE);
 		button_54.setText("<");
 		button_54.setBounds(457, 152, 42, 39);
+		map.put(16777219, button_54);
 		
 		Button button_55 = new Button(Keyboard, SWT.NONE);
 		button_55.setBounds(153, 152, 256, 39);
