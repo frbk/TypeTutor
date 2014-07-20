@@ -275,6 +275,7 @@ public class Tutor {
 		Button button_40 = new Button(Keyboard, SWT.NONE);
 		button_40.setText("Shift");
 		button_40.setBounds(0, 114, 84, 39);
+		map.put(131072, button_40);
 		
 		Button button_41 = new Button(Keyboard, SWT.NONE);
 		button_41.setText("^");
