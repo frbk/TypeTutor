@@ -74,7 +74,6 @@ public class Tutor {
 				int keycode;
 				keycode = e.keyCode;
 				Button btn = map.get(keycode);
-				label1.setText("Key pressed "+ keycode);
 				 if (btn != null) {
 		             map.get(keycode).setBackground(new Color(null, 255,255,13));
 		        }
@@ -84,7 +83,6 @@ public class Tutor {
 				int keycode;
 				keycode = e.keyCode;
 				Button btn = map.get(keycode);
-				label1.setText("Key pressed "+ keycode);
 				 if (btn != null) {
 					 map.get(keycode).setBackground(new Color(null,255,255,255));
 		        }
