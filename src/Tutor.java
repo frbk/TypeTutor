@@ -104,121 +104,147 @@ public class Tutor {
 		button_1.setLocation(41, 0);
 		button_1.setSize(42, 39);
 		button_1.setText("1");
+		map.put(49, button_1);
 		
 		Button button_2 = new Button(Keyboard, SWT.NONE);
 		button_2.setLocation(81, 0);
 		button_2.setSize(42, 39);
 		button_2.setText("2");
+		map.put(50, button_2);
 		
 		Button button_3 = new Button(Keyboard, SWT.NONE);
 		button_3.setLocation(121, 0);
 		button_3.setSize(42, 39);
 		button_3.setText("3");
+		map.put(51, button_3);
 		
 		Button button_4 = new Button(Keyboard, SWT.NONE);
 		button_4.setLocation(161, 0);
 		button_4.setSize(42, 39);
 		button_4.setText("4");
+		map.put(52, button_4);
 		
 		Button button_5 = new Button(Keyboard, SWT.NONE);
 		button_5.setLocation(201, 0);
 		button_5.setSize(42, 39);
 		button_5.setText("5");
+		map.put(53, button_5);
 		
 		Button button_6 = new Button(Keyboard, SWT.NONE);
 		button_6.setLocation(241, 0);
 		button_6.setSize(42, 39);
 		button_6.setText("6");
+		map.put(54, button_6);
 		
 		Button button_7 = new Button(Keyboard, SWT.NONE);
 		button_7.setLocation(281, 0);
 		button_7.setSize(42, 39);
 		button_7.setText("7");
+		map.put(55, button_7);
 		
 		Button button_8 = new Button(Keyboard, SWT.NONE);
 		button_8.setLocation(321, 0);
 		button_8.setSize(42, 39);
 		button_8.setText("8");
+		map.put(56, button_8);
 		
 		Button button_9 = new Button(Keyboard, SWT.NONE);
 		button_9.setLocation(361, 0);
 		button_9.setSize(42, 39);
 		button_9.setText("9");
+		map.put(57, button_9);
 		
 		Button button_10 = new Button(Keyboard, SWT.NONE);
 		button_10.setLocation(401, 0);
 		button_10.setSize(42, 39);
 		button_10.setText("-");
+		map.put(45, button_10);
 		
 		Button button_11 = new Button(Keyboard, SWT.NONE);
 		button_11.setLocation(441, 0);
 		button_11.setSize(42, 39);
 		button_11.setText("+");
+		map.put(61, button_11);
 		
 		Button button_12 = new Button(Keyboard, SWT.NONE);
 		button_12.setLocation(481, 0);
 		button_12.setSize(100, 39);
 		button_12.setText("Backspace");
+		map.put(8, button_12);
 		
 		Button button_13 = new Button(Keyboard, SWT.NONE);
 		button_13.setLocation(0, 38);
 		button_13.setSize(60, 39);
 		button_13.setText("Tab");
+		map.put(9, button_13);
 		
 		Button button_14 = new Button(Keyboard, SWT.NONE);
 		button_14.setLocation(59, 38);
 		button_14.setSize(42, 39);
 		button_14.setText("Q");
+		map.put(113, button_14);
 		
 		Button button_15 = new Button(Keyboard, SWT.NONE);
 		button_15.setLocation(99, 38);
 		button_15.setSize(42, 39);
 		button_15.setText("W");
+		map.put(119, button_15);
 		
 		Button button_16 = new Button(Keyboard, SWT.NONE);
 		button_16.setLocation(139, 38);
 		button_16.setSize(42, 39);
 		button_16.setText("E");
+		map.put(101, button_16);
 		
 		Button button_17 = new Button(Keyboard, SWT.NONE);
 		button_17.setText("R");
 		button_17.setBounds(179, 38, 42, 39);
+		map.put(114, button_17);
 		
 		Button button_18 = new Button(Keyboard, SWT.NONE);
 		button_18.setText("T");
 		button_18.setBounds(218, 38, 42, 39);
+		map.put(116, button_18);
 		
 		Button button_19 = new Button(Keyboard, SWT.NONE);
 		button_19.setText("Y");
 		button_19.setBounds(258, 38, 42, 39);
+		map.put(121, button_19);
 		
 		Button button_20 = new Button(Keyboard, SWT.NONE);
 		button_20.setText("U");
 		button_20.setBounds(297, 38, 42, 39);
+		map.put(117, button_20);
 		
 		Button button_21 = new Button(Keyboard, SWT.NONE);
 		button_21.setText("I");
 		button_21.setBounds(337, 38, 42, 39);
+		map.put(105, button_21);
 		
 		Button button_22 = new Button(Keyboard, SWT.NONE);
 		button_22.setText("O");
 		button_22.setBounds(377, 38, 42, 39);
+		map.put(111, button_22);
 		
 		Button button_23 = new Button(Keyboard, SWT.NONE);
 		button_23.setText("P");
 		button_23.setBounds(417, 38, 42, 39);
+		map.put(112, button_23);
 		
 		Button button_24 = new Button(Keyboard, SWT.NONE);
 		button_24.setText("[");
 		button_24.setBounds(457, 38, 42, 39);
+		map.put(91, button_24);
 		
 		Button button_25 = new Button(Keyboard, SWT.NONE);
 		button_25.setText("]");
 		button_25.setBounds(497, 38, 42, 39);
+		map.put(93, button_25);
 		
 		Button button_26 = new Button(Keyboard, SWT.NONE);
 		button_26.setText("\\");
 		button_26.setBounds(537, 38, 42, 39);
+		map.put(92, button_26);
 		
 		Button button_27 = new Button(Keyboard, SWT.NONE);
 		button_27.setText("Caps");
