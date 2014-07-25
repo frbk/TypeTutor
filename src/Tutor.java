@@ -56,14 +56,14 @@ public class Tutor {
 		shlTypingTutor.setText("Typing Tutor");
 		
 		final Label label1 = new Label(shlTypingTutor, SWT.NONE);
-		label1.setFont(SWTResourceManager.getFont("Ubuntu", 10, SWT.NORMAL));
+		label1.setFont(SWTResourceManager.getFont("Times New Roman", 11, SWT.NORMAL));
 		label1.setText("Type some text using your keyboard. The keys you press will be highlighted and the text will be displayed.");
 		label1.setBounds(10, 10, 698, 17);
 		
 		Label label2 = new Label(shlTypingTutor, SWT.NONE);
-		label2.setFont(SWTResourceManager.getFont("Ubuntu", 10, SWT.NORMAL));
+		label2.setFont(SWTResourceManager.getFont("Times New Roman", 11, SWT.NORMAL));
 		label2.setBounds(10, 33, 698, 17);
-		label2.setText("Note: Clickin the buttons with your mouse will not perform any action.");
+		label2.setText("Note: Clicking the buttons with your mouse will not perform any action.");
 		
 		text = new Text(shlTypingTutor, SWT.BORDER | SWT.WRAP);
 		text.addKeyListener(new KeyAdapter() {
