@@ -249,54 +249,67 @@ public class Tutor {
 		Button button_27 = new Button(Keyboard, SWT.NONE);
 		button_27.setText("Caps");
 		button_27.setBounds(0, 76, 60, 39);
+		map.put(16777298, button_27);
 		
 		Button button_28 = new Button(Keyboard, SWT.NONE);
 		button_28.setText("A");
 		button_28.setBounds(59, 76, 42, 39);
+		map.put(97, button_28);
 		
 		Button button_29 = new Button(Keyboard, SWT.NONE);
 		button_29.setText("S");
 		button_29.setBounds(99, 76, 42, 39);
+		map.put(115, button_29);
 		
 		Button button_30 = new Button(Keyboard, SWT.NONE);
 		button_30.setText("D");
 		button_30.setBounds(139, 76, 42, 39);
+		map.put(100, button_30);
 		
 		Button button_31 = new Button(Keyboard, SWT.NONE);
 		button_31.setText("F");
 		button_31.setBounds(179, 76, 42, 39);
+		map.put(102, button_31);
 		
 		Button button_32 = new Button(Keyboard, SWT.NONE);
 		button_32.setText("G");
 		button_32.setBounds(218, 76, 42, 39);
+		map.put(103, button_32);
 		
 		Button button_33 = new Button(Keyboard, SWT.NONE);
 		button_33.setText("H");
 		button_33.setBounds(258, 76, 42, 39);
+		map.put(104, button_33);
 		
 		Button button_34 = new Button(Keyboard, SWT.NONE);
 		button_34.setText("J");
 		button_34.setBounds(297, 76, 42, 39);
+		map.put(106, button_34);
 		
 		Button button_35 = new Button(Keyboard, SWT.NONE);
 		button_35.setText("K");
 		button_35.setBounds(337, 76, 42, 39);
+		map.put(107, button_35);
 		
 		Button button_36 = new Button(Keyboard, SWT.NONE);
 		button_36.setText("L");
 		button_36.setBounds(377, 76, 42, 39);
+		map.put(108, button_36);
 		
 		Button button_37 = new Button(Keyboard, SWT.NONE);
 		button_37.setText(":");
 		button_37.setBounds(417, 76, 42, 39);
+		map.put(59, button_37);
 		
 		Button button_38 = new Button(Keyboard, SWT.NONE);
 		button_38.setText("\"");
 		button_38.setBounds(457, 76, 42, 39);
+		map.put(39, button_38);
 		
 		Button button_39 = new Button(Keyboard, SWT.NONE);
 		button_39.setText("Enter");
 		button_39.setBounds(497, 76, 84, 39);
+		map.put(13, button_39);
 		
 		Button button_40 = new Button(Keyboard, SWT.NONE);
 		button_40.setText("Shift");
