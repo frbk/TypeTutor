@@ -54,7 +54,7 @@ public class Tutor {
 	protected void createContents() {
 		final Map<Integer, Button> map = new HashMap<>();
 		shlTypingTutor = new Shell();
-		shlTypingTutor.setSize(664, 562);
+		shlTypingTutor.setSize(670, 486);
 		shlTypingTutor.setText("Typing Tutor");
 		
 		final Label label1 = new Label(shlTypingTutor, SWT.NONE);
@@ -93,7 +93,7 @@ public class Tutor {
 		text.setBounds(10, 56, 644, 193);
 		
 		Composite Keyboard = new Composite(shlTypingTutor, SWT.NONE);
-		Keyboard.setBounds(10, 255, 592, 204);
+		Keyboard.setBounds(20, 255, 627, 204);
 		
 		Button button = new Button(Keyboard, SWT.NONE);
 		button.setSize(42, 39);
@@ -153,24 +153,6 @@ public class Tutor {
 		button_9.setSize(42, 39);
 		button_9.setText("9");
 		map.put(57, button_9);
-		
-		Button button_10 = new Button(Keyboard, SWT.NONE);
-		button_10.setLocation(401, 0);
-		button_10.setSize(42, 39);
-		button_10.setText("-");
-		map.put(45, button_10);
-		
-		Button button_11 = new Button(Keyboard, SWT.NONE);
-		button_11.setLocation(441, 0);
-		button_11.setSize(42, 39);
-		button_11.setText("+");
-		map.put(61, button_11);
-		
-		Button button_12 = new Button(Keyboard, SWT.NONE);
-		button_12.setLocation(481, 0);
-		button_12.setSize(100, 39);
-		button_12.setText("Backspace");
-		map.put(8, button_12);
 		
 		Button button_13 = new Button(Keyboard, SWT.NONE);
 		button_13.setLocation(0, 38);
@@ -319,54 +301,67 @@ public class Tutor {
 		Button button_41 = new Button(Keyboard, SWT.NONE);
 		button_41.setText("^");
 		button_41.setBounds(497, 114, 42, 39);
+		map.put(16777217, button_41);
 		
 		Button button_42 = new Button(Keyboard, SWT.NONE);
 		button_42.setText("Z");
 		button_42.setBounds(81, 114, 42, 39);
+		map.put(122, button_42);
 		
 		Button button_43 = new Button(Keyboard, SWT.NONE);
 		button_43.setText("X");
 		button_43.setBounds(121, 114, 42, 39);
+		map.put(120, button_43);
 		
 		Button button_44 = new Button(Keyboard, SWT.NONE);
 		button_44.setText("C");
 		button_44.setBounds(161, 114, 42, 39);
+		map.put(99, button_44);
 		
 		Button button_45 = new Button(Keyboard, SWT.NONE);
 		button_45.setText("V");
 		button_45.setBounds(201, 114, 42, 39);
+		map.put(118, button_45);
 		
 		Button button_46 = new Button(Keyboard, SWT.NONE);
 		button_46.setText("B");
 		button_46.setBounds(241, 114, 42, 39);
+		map.put(98, button_46);
 		
 		Button button_47 = new Button(Keyboard, SWT.NONE);
 		button_47.setText("N");
 		button_47.setBounds(281, 114, 42, 39);
+		map.put(110, button_47);
 		
 		Button button_48 = new Button(Keyboard, SWT.NONE);
 		button_48.setText("M");
 		button_48.setBounds(321, 114, 42, 39);
+		map.put(109, button_48);
 		
 		Button button_49 = new Button(Keyboard, SWT.NONE);
 		button_49.setText(",");
 		button_49.setBounds(361, 114, 42, 39);
+		map.put(44, button_49);
 		
 		Button button_50 = new Button(Keyboard, SWT.NONE);
 		button_50.setText(".");
 		button_50.setBounds(401, 114, 42, 39);
+		map.put(46, button_50);
 		
 		Button button_51 = new Button(Keyboard, SWT.NONE);
 		button_51.setText("?");
 		button_51.setBounds(441, 114, 42, 39);
+		map.put(47, button_51);
 		
 		Button button_52 = new Button(Keyboard, SWT.NONE);
 		button_52.setText("v");
 		button_52.setBounds(497, 152, 42, 39);
+		map.put(16777218, button_52);
 		
 		Button button_53 = new Button(Keyboard, SWT.NONE);
 		button_53.setText(">");
 		button_53.setBounds(537, 152, 42, 39);
+		map.put(16777220, button_53);
 		
 		Button button_54 = new Button(Keyboard, SWT.NONE);
 		button_54.setText("<");
@@ -375,6 +370,31 @@ public class Tutor {
 		
 		Button button_55 = new Button(Keyboard, SWT.NONE);
 		button_55.setBounds(153, 152, 256, 39);
+		map.put(32, button_55);
+		
+		Button button_12 = new Button(Keyboard, SWT.NONE);
+		button_12.setLocation(521, 0);
+		button_12.setSize(100, 39);
+		button_12.setText("Backspace");
+		map.put(8, button_12);
+		
+		Button button_11 = new Button(Keyboard, SWT.NONE);
+		button_11.setLocation(481, 0);
+		button_11.setSize(42, 39);
+		button_11.setText("+");
+		map.put(61, button_11);
+		
+		Button button_10 = new Button(Keyboard, SWT.NONE);
+		button_10.setLocation(441, 0);
+		button_10.setSize(42, 39);
+		button_10.setText("-");
+		map.put(45, button_10);
+		
+		Button button_56 = new Button(Keyboard, SWT.NONE);
+		button_56.setLocation(401, 0);
+		button_56.setSize(42, 39);
+		button_56.setText("0");
+		map.put(48, button_56);
 		
 	}
 }
